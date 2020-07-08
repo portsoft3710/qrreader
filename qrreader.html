@@ -40,7 +40,7 @@ window.addEventListener('load', function() {
 <body>
 
 <h1>QRCode Reader</h1>
-
+<button type="button" onclick="qrReader();">QR!</button>
 <section id="contents">
   <!-- カメラ映像 -->
   <video id="camera" width="300" height="200" muted></video>
@@ -60,7 +60,7 @@ const video  = $("#camera");     // === document.querySelector("#camera");
 const canvas = $("#picture");    // === document.querySelector("#picture");
 const ctx = canvas.getContext("2d");
 
-window.onload = () => {
+function qrReader(){
   /** カメラ設定 */
   const constraints = {
     audio: false,
@@ -87,7 +87,7 @@ window.onload = () => {
   .catch( (err) => {
     console.log(err.name + ": " + err.message);
   });
-};
+}
 
 /**
  * QRコードの読み取り
