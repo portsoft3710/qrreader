@@ -1,0 +1,8 @@
+{
+  "name": "",
+  "short_name": "",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "start_url": "./?utm_source=homescreen",
+  "display": "standalone"
+}
