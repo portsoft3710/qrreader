@@ -4,5 +4,5 @@
   "theme_color": "#fff",
   "background_color": "#fff",
   "start_url": "./?utm_source=homescreen",
-  "display": "standalone"
+  "display": "browser"
 }
