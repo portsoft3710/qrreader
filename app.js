@@ -6,8 +6,7 @@ const video  = document.querySelector('#js-video')
 const canvas = document.querySelector('#js-canvas')
 const ctx    = canvas.getContext('2d')
 
-function checkImage(){
-	//const checkImage = () => {
+const checkImage = () => {
     // 取得している動画をCanvasに描画
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height)
 
@@ -38,6 +37,8 @@ document.querySelector('#js-modal-close')
         checkImage()
     })
 
+function dispCamera(){
+	
 navigator.mediaDevices
     .getUserMedia({
         audio: false,
@@ -57,3 +58,5 @@ navigator.mediaDevices
     .catch(function(err) {
         alert('Error!!')
     })
+}
+
