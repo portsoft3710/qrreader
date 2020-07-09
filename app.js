@@ -39,7 +39,7 @@ document.querySelector('#js-modal-close')
     })
 
 function dispCamera(){
-	
+	alert('abc');
 navigator.mediaDevices
     .getUserMedia({
         audio: false,
