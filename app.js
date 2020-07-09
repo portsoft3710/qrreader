@@ -6,7 +6,8 @@ const video  = document.querySelector('#js-video')
 const canvas = document.querySelector('#js-canvas')
 const ctx    = canvas.getContext('2d')
 
-const checkImage = () => {
+function checkImage(){
+	//const checkImage = () => {
     // 取得している動画をCanvasに描画
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height)
 
