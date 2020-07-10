@@ -29,9 +29,12 @@ window.addEventListener('load', function() {
 </script>	
 </head>
 <body>
-  <button type="button" onclick="dispCamera();">QRreader</button>
 <div class="reader">
-  <video id="js-video" class="reader-video" autoplay playsinline></video>
+	<div>
+		<video id="js-video" class="reader-video" autoplay playsinline></video>
+		<img id="js-cover-img" class="cover-img show" src="">
+	</div>
+		<button type="button" onclick="dispCamera();">QRreader</button>
 </div>
 
 <div style="display:none">

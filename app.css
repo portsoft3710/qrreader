@@ -12,18 +12,31 @@ html, body {
 }
 
 .reader {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     position: relative;
+	text-align: center;
 }
 
 .reader-video {
+	margin: 0 auto;
     background-color: #000;
-    width: 100%;
-    height: 100%;
+    width: 70vw;
+    height: 70vw;
     object-fit: fill;
+	display: none;
 }
-
+.reader-video.show {
+	display: block;
+}
+.js-cover-img{
+	width: 100%;
+	height: auto;
+	display: none;
+}
+.js-cover-img.show{
+	display: block;
+}
 .modal-overlay {
     display: none;
     position: fixed;
@@ -75,7 +88,6 @@ html, body {
     font-size: 18px;
     text-decoration: none;
 }
-
 .unsupported {
     display: none;
     flex-direction: column;
@@ -88,11 +100,9 @@ html, body {
     height: 100%;
     color: #fff;
 }
-
 .unsupported.is-show {
     display: flex;
 }
-
 .unsupported-title {
     font-weight: bold;
     font-size: 2em;
